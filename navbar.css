@@ -1,0 +1,125 @@
+.topnav {
+  background-color: #800000;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+html.dark .topnav {
+  background-color: #4a0000;
+}
+
+.topnav a {
+  float: left;
+  color: #e8ceb0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #e8ceb0;
+  color: #800000;
+}
+
+.topnav a.active {
+  background-color: #e8ceb0;
+  color: #800000;
+}
+
+html.dark .topnav a:hover {
+  background-color: #e8ceb0;
+  color: #4a0000;
+}
+
+html.dark .topnav a.active {
+  background-color: #e8ceb0;
+  color: #4a0000;
+}
+
+.topnav a.split {
+  float: right;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 20.9px;
+  border-radius: 50px 0 0 50px;
+  border: none;
+}
+
+html.dark .topnav input[type=text] {
+  background: #333;
+  color: #e8ceb0;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 11px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #e8ceb0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: #800000;
+  border-radius: 0 50px 50px 0;
+}
+
+.topnav .search-container button:hover {
+  scale: 150%;
+  border-radius: 50px;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  background: #800000;
+  width: 220px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown-menu.open {
+  max-height: 600px;
+}
+
+.dropdown-menu .continent-btn {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #600000;
+  color: #e8ceb0;
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  float: none;
+}
+
+.dropdown-menu .continent-btn:hover {
+  background: #600000 !important;
+  color: #e8ceb0 !important;
+}
+
+html.dark .dropdown-menu {
+  background: #4a0000;
+}
+
+html.dark .dropdown-menu .continent-btn:hover {
+  background: #3a0000 !important;
+}
+

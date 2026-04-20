@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 48px;
+    background-color: var(--contrast-bg, #ffffff);
+    color: var(--contrast-color, #000000);
+}
+
+html.dark body {
+    background: #1a1a1a;
+    color: #e8ceb0;
+}
+
+html.dark .topnav {
+    background-color: #4a0000;
+}
+
+.browse-page {
+    padding: 40px 30px;
+    max-width: 900px;
+}
+
+.browse-page h1 {
+    margin-bottom: 30px;
+    color: #800000;
+}
+
+html.dark .browse-page h1 {
+    color: #e8ceb0;
+}
+
+.featured-section,
+.countries-section {
+    margin-bottom: 30px;
+}
+
+.featured-section h2,
+.countries-section h2 {
+    color: #800000;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+html.dark .featured-section h2,
+html.dark .countries-section h2 {
+    color: #e8ceb0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.featured-card {
+    display: block;
+    padding: 20px;
+    background: #f9f1e7;
+    border: 2px solid #e8ceb0;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.featured-card:hover {
+    background: #e8ceb0;
+    border-color: #800000;
+}
+
+.featured-card h2 {
+    color: #800000;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.featured-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+html.dark .featured-card {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #e8ceb0;
+}
+
+html.dark .featured-card:hover {
+    background: #3a3a3a;
+    border-color: #800000;
+}
+
+html.dark .featured-card h2 {
+    color: #e8ceb0;
+}
+
+html.dark .featured-card p {
+    color: #aaa;
+}
+
+#country-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.country-btn {
+    padding: 8px 20px;
+    border: 2px solid #e8ceb0;
+    border-radius: 25px;
+    background: white;
+    color: #800000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.country-btn:hover,
+.country-btn.active {
+    background: #800000;
+    color: #e8ceb0;
+    border-color: #800000;
+}
+
+html.dark .country-btn {
+    background: #2a2a2a;
+    color: #e8ceb0;
+    border-color: #555;
+}
+
+html.dark .country-btn:hover,
+html.dark .country-btn.active {
+    background: #800000;
+    border-color: #800000;
+}
+
+.result-card {
+    display: block;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #e8ceb0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.2s;
+}
+
+.result-card:hover {
+    background-color: #f9f1e7;
+    border-color: #800000;
+}
+
+.result-card h2 {
+    color: #800000;
+    margin-bottom: 5px;
+}
+
+.result-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+html.dark .result-card {
+    border-color: #444;
+    color: #e8ceb0;
+}
+
+html.dark .result-card:hover {
+    background: #2a2a2a;
+    border-color: #800000;
+}
+
+html.dark .result-card h2 {
+    color: #e8ceb0;
+}
+
+html.dark .result-card p {
+    color: #aaa;
+}
+
+.no-results {
+    font-size: 18px;
+    color: #666;
+}
+
+html.dark .no-results {
+    color: #aaa;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

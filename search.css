@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 48px;
+    background-color: var(--contrast-bg, #ffffff);
+    color: var(--contrast-color, #000000);
+}
+
+html.dark body {
+    background: #1a1a1a;
+    color: #e8ceb0;
+}
+
+html.dark .topnav {
+    background-color: #4a0000;
+}
+
+html.dark .result-card {
+    border-color: #444;
+    color: #e8ceb0;
+}
+
+html.dark .result-card:hover {
+    background-color: #2a2a2a;
+    border-color: #800000;
+}
+
+html.dark .result-card h2 {
+    color: #e8ceb0;
+}
+
+html.dark .result-card p {
+    color: #aaa;
+}
+
+html.dark .no-results {
+    color: #aaa;
+}
+
+html.dark .search-page h1 {
+    color: #e8ceb0;
+}
+
+.search-page {
+    max-width: 800px;
+    margin: 0;
+    padding: 40px 30px;
+    text-align: left;
+}
+
+.search-page h1 {
+    margin-bottom: 30px;
+    color: #800000;
+}
+
+.result-card {
+    display: block;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #e8ceb0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.2s;
+}
+
+.result-card:hover {
+    background-color: #f9f1e7;
+    border-color: #800000;
+}
+
+.result-card h2 {
+    color: #800000;
+    margin-bottom: 5px;
+}
+
+.result-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.no-results {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+}

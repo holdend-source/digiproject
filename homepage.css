@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 48px;
+}
+
+html.dark body {
+    background: #1a1a1a;
+    color: #e8ceb0;
+}
+
+.hero {
+    background: #ffffff url('https://cas.stthomas.edu/_media-library/_images/history/1920x1080/stthomas-history-time.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: top center;
+    height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-heading {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.hero-button {
+    background-color: #800000;
+    border: none;
+    color: #e8ceb0;
+    padding: 7px 15px;
+    border-radius: 200px;
+    text-decoration: none;
+    font-size: 40px !important;
+    padding: 7px 15px !important;
+}
+
+.hero-button:hover {
+    background-color: #e8ceb0;
+    color: #800000;
+    cursor: pointer;
+}
+
+.below {
+    background-color: var(--contrast-bg, #ffffff);
+    color: var(--contrast-color, #000000);
+    padding: 40px;
+}
+
+html.dark .below {
+    background: #1a1a1a;
+    color: #e8ceb0;
+}
+
+.below-cards {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.below-card {
+    flex: 1;
+    background: #f9f1e7;
+    border: 2px solid #e8ceb0;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+html.dark .below-card {
+    background: #2a2a2a;
+    border-color: #444;
+}
+
+.below-card h2 {
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+html.dark .below-card h2 {
+    color: #e8ceb0;
+}
+
+.below-card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+html.dark .below-card p {
+    color: #aaa;
+}
+
+.below-btn {
+    padding: 10px 24px;
+    background: #800000;
+    color: #e8ceb0;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px !important;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.below-btn:hover {
+    background: #600000;
+}
+
+.below-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+#random-continent-img {
+    object-fit: contain;
+    background-color: #e8ceb0;
+}

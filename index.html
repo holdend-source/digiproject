@@ -1,0 +1,56 @@
+<html>
+<title>Home</title>
+<head>
+    <script src="contrast.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <script defer src="homepage.js"></script>
+    <script defer src="navbar.js"></script>
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+    <div class="dropdown-menu" id="dropdown-menu">
+        <a class="continent-btn" href="browse.html?continent=europe">Europe</a>
+        <a class="continent-btn" href="browse.html?continent=asia">Asia</a>
+        <a class="continent-btn" href="browse.html?continent=africa">Africa</a>
+        <a class="continent-btn" href="browse.html?continent=northamerica">North America</a>
+        <a class="continent-btn" href="browse.html?continent=southamerica">South America</a>
+        <a class="continent-btn" href="browse.html?continent=oceania">Oceania</a>      
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="active"><span class="material-symbols-outlined">home</span></a>
+        <a href="#" onclick="toggleMenu(); return false;"><span class="material-symbols-outlined">menu</span></a>
+        <a href="settings.html" class="split"><span class="material-symbols-outlined">settings</span></a>
+        <a href="profile.html" class="split"><span class="material-symbols-outlined">person</span></a>
+        <a href="#" class="split"><span class="material-symbols-outlined">mail</span></a>
+        <a href="#" class="split"><span class="material-symbols-outlined">bookmark</span></a>
+        <div class="search-container">
+            <form action="#" onsubmit="doSearch(); return false;">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+            </form>
+        </div>
+    </div>
+    <div class="hero">
+        <h1 class="hero-heading">Discover History</h1>
+    </div>
+    <div class="below">
+        <div class="below-cards">
+            <div class="below-card">
+                <img id="random-story-img" src="https://placehold.co/400x200?text=Loading..." alt="Random story">
+                <h2>Feeling Lucky?</h2>
+                <p id="random-story-title">Loading...</p>
+                <button class="below-btn" onclick="goToRandomStory()">Read Story</button>
+            </div>
+            <div class="below-card">
+                <img id="random-continent-img" src="https://placehold.co/400x200?text=Loading..." alt="Random continent">
+                <h2>Explore a Continent</h2>
+                <p id="random-continent-title">Loading...</p>
+                <button class="below-btn" onclick="goToRandomContinent()">Browse Continent</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
