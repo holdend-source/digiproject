@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'textfont';
+    src: url("FjallaOne-Regular.ttf");
+}
+@font-face {
+    font-family: 'homeheading';
+    src: url("UnifrakturCook-Bold.ttf");
+}
+@font-face {
+    font-family: 'headtext';
+    src: url("LeagueGothic-Regular-VariableFont_wdth.ttf");
+}
+body, p, h2, h3, h4, h5, h6, a, input, button, li, label, option, select {
+    font-family: 'textfont', sans-serif;
+}
+input {
+    font-family: arial;
+}
+h1 {
+    font-family: 'headtext', sans-serif;
+    font-size: 50px;
+}
+
+.hero-heading {
+    font-family: 'homeheading', serif;
+}
+
+body {
+    background-color: var(--contrast-bg, #ffffff);
+    color: var(--contrast-color, #000000);
+    transition: background-color 0.3s, color 0.3s;
+}
+html.font-small p, html.font-small a:not(.hero-button), html.font-small li, html.font-small label, html.font-small button:not(.hero-button) { font-size: 14px !important; }
+html.font-medium p, html.font-medium a:not(.hero-button), html.font-medium li, html.font-medium label, html.font-medium button:not(.hero-button) { font-size: 16px !important; }
+html.font-large p, html.font-large a:not(.hero-button), html.font-large li, html.font-large label, html.font-large button:not(.hero-button) { font-size: 20px !important; }

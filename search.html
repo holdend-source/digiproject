@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Search</title>
+    <script src="contrast.js"></script>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="text.css">
+    <script defer src="homepage.js"></script>
+    <script defer src="search.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script defer src="navbar.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a class="continent-btn" href="browse.html?continent=europe">Europe</a>
+            <a class="continent-btn" href="browse.html?continent=asia">Asia</a>
+            <a class="continent-btn" href="browse.html?continent=africa">Africa</a>
+            <a class="continent-btn" href="browse.html?continent=northamerica">North America</a>
+            <a class="continent-btn" href="browse.html?continent=southamerica">South America</a>
+            <a class="continent-btn" href="browse.html?continent=oceania">Oceania</a>     
+        </div>
+        <a href="index.html"><span class="material-symbols-outlined">home</span></a>
+        <a href="#" onclick="toggleMenu(); return false;"><span class="material-symbols-outlined">menu</span></a>
+        <a href="settings.html" class="split"><span class="material-symbols-outlined">settings</span></a>
+        <a href="saved.html" class="split"><span class="material-symbols-outlined">bookmark</span></a>
+        <div class="search-container">
+            <form action="#" onsubmit="doSearch(); return false;">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+            </form>
+        </div>
+    </div>
+ 
+    <div class="search-page">
+        <h1 id="search-title">Results for ""</h1>
+        <div id="search-results"></div>
+    </div>
+</body>
+</html>
+ 
